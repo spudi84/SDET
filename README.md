@@ -18,3 +18,4 @@ How to run the Sort_csv.py script using docker
 4) Run the following command to run the image "docker run *image-name*"
 5) The output.csv will be created on the image and can be copied to the local machine using the following command
 "docker cp *container_id*:output.csv ."
+6) The log file is **Sort_csv.log** and can be copied using the same docker command as above.
