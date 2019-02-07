@@ -1,5 +1,5 @@
 # SDET
-Files Included in the Repository and the working
+##Files Included in the Repository and the working
 -------------------------------------------------
 -------------------------------------------------
 
@@ -10,7 +10,7 @@ Files Included in the Repository and the working
 5)	Q&A.txt – Answers for the Tools and Testing Methodology sections
 6)	input.csv – Sample input file to test the working
 
-How to run the Sort_csv.py script using docker
+###How to run the Sort_csv.py script using docker
 ----------------------------------------------
 1) Copy the Dockerfile, Sort_csv.py and input.csv to your local machine
 2) Browse to the local path on command line
