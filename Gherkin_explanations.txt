@@ -1,0 +1,46 @@
+Scenario 1:
+Input file doesn't necessarily has data always. In the case when the input file is empty, the program should not fail but give an output file which is empty.
+This case will help not break the program in case of empty files
+
+Scenario 2:
+This is the scenario where the input file contains alphabetical strings in the same format with no capitalization inconsistencies. This is needed
+so the program can be tested that it is working as expected
+
+Scenario 3:
+The input file may contain just spaces or nulls as the comma-seperated values. In this case, the program should not fail and return all the 
+non-null strings in alphabetical order and place the spaces and nulls at the end of the order respectively.
+
+Note: It is assumed that all the values in input should be present in the output in Scenario 3
+
+Scenario 4:
+The program should perform consistently for all types of encoding. The difference in encoding should not impact the working of the program and should always
+produce the output.
+
+Scenario 5:
+Input file may contain alphanumeric data in which case the sort function should work as expected. The characters are sorted by their ascii values.
+
+Scenario 6:
+When the input file contains lowercase and uppercase characters, the alphabetical order may be compromised. For example, words starting with lowercase 'p' are interpreted
+as words that are higher than a word that starts with an uppercase 'V'. For example 'portland' will be ordered before 'Vancouver' in descending order as opposed 
+to Vancouver, portland. Uppercase or lowercase should not change the alphabetical order
+
+Scenario 7:
+When the input file contains similar strings with different cases (upper and lower case). For example, 'portland' and 'Portland', then the order of the two strings
+should be retained in the output file. If the input file contains 'Portland, portland' then the output should contain 'Portland, portland'.
+
+Scenario 8:
+If the input file is not a csv file then the program should just create an empty output.csv file since the requirement is that the input will be in the csv.
+format
+
+Scenario 9:
+If the input file has a different name than input.csv then the program should just create an empty output.csv file since the requirement is that the 
+input file's name should be input.csv.
+
+Scenario 10:
+If the input file contains more than one line then only the first line will be sorted and written to the output.csv file. This is based on the assumption that
+the program will only look for the first single line in the input.csv
+
+Scenario 11:
+If the input file contains data that is above the maximum limit of the sort function, then the output.csv should be created as an empty file but not fail the program.
+
+

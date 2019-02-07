@@ -1,0 +1,72 @@
+Tools
+Q1. In your opinion, what's helpful about version control system? What's annoying about them?
+1) Branching and merging are easy. We can have a branch for each feature the individual devs are working on and merge back in when ready
+2) Keeping up with others changes in the feature branch is as easy as merging on a regular basis
+3) If the changes made are not working correctly, undoing them is a single command like git stash
+4) Rolling back the code to a specific version in the case of issues
+5) Testing in different environments with different versions is possible
+6) It helps maintain a common repository for all the versions
+7) Tracks the history of all the changes/updates on the code
+8) Easy to work offline or get back to work after a break
+
+What annoys me about version control system
+1) There is a high possibility of incomplete work and too many branches opened which makes it hard to understand which branch we want to keep, after a certain point of time.
+This is not a version control system fault but that of the developer practices.
+2) Occasional unwanted checking ins of files
+
+Q2. What are some pros and cons of using Docker to develop, test, and deploy software?
+Pros:
+1) Consistent results on any machine when the code is executed
+2) Reduces the overhead of upgrading, installing and configuring machines when deploying
+3) Docker hub enables sharing images on the cloud that can be accessed easily
+4) Debugging due to difference in environments is eliminated
+5) Docker runs on the existing OS and doesn't require its own OS unlike Virtual Machines
+
+Cons
+1) Learning curve in understanding Docker
+2) Less flexibility in Operating Systems
+3) Security of docker containers is one of the cons since all the containers share the kernel and other components of the host system.
+
+Q3. How do you choose which language for a given task? How did you choose the language for the programming exercise above?
+The factors I look into when choosing a language 
+1) Compare the characteristics of the programming language with what I want to accomplish. 
+2) The range of applications that needs to be integrated
+3) Level of Security needed
+4) Research on similar examples of my situation and the programming langugages used.
+
+I chose python to do the programming exercise based on my familiarity, availability of inbuilt functions, external packages and the least number of 
+lines needed to code, among the languages I know
+
+Testing Methodology
+Q1. What's the right Role QA in the software development process?
+The role of the QA is to identify defects that would compromise the quality of the product which guarantees the best quality of the delivered product.
+The QA role works with the Architect to convert requirements into test cases and scripts that ensures if the system meets the client needs. 
+Meet with the business owner/PO/SME to get the test plans and cases approved. Apart from the functional testing and quality assurance, the performance and security testing 
+should be accompanied. 
+
+Q2. As a QA person, you have 2 weeks
+1) Understand the feature and the user stories thoroughly and identify what should be achieved
+2) Convert the requirements into test cases (Gherkin in CCS)
+3) Generate a skeleton of an integrated automated script that checks all the cases in the stories
+
+Q3. Automated testing vs Manual testing
+Automation testing should always be considered over manual testing wherever possible. Manual testing must be considered when there isn't a scope for 
+automation in areas like UI or front end testing. Scripting or automation is very effective which minimizes human errors and improve the time usage of a QA role.
+
+Q4.
+Ask the following questions to the relevant team members/business/PO
+1) What is the time and effort taken to test the features?
+Estimated the time that will be needed for testing the features. Identify all the dependent features, if any, because there can be features that need to have another feature/features for it to work correctly. 
+2) What features out of the newly added and the refactored old features are mandatory for the integration testing
+There can be some features that display the obvious defects of the product or break the product if not present. Exceptions can't be made on them.
+2) What features are good to have vs what are critical for the business. 
+Identify the list of features in the order of preference that the product should defintely have in production. Get together with the business and the PO to understand this.
+Test them first and if time permits test the remaining.
+3) Volume of the users/consumers impacted by a defective feature. 
+Tackle that first and go in the sequence of highest impacted users to lowest
+4) What are the new features being added and old features being refactored? How many of the new features can wait and not go-live? 
+What is the impact of old features not being refactored?
+Get the golden list of the features that are critical for the product to work as expected.
+5) How long do we have to test the features and how long does it take to test each feature? Based on this we can estimate how many important features can be tested in the team's capacity.
+Raise the flag as early as possible to the business and PO. There can be several things done in order to finish the estimated testing effort like adding resources, selecting the few critical features, 
+automating testing wherever needed (as an iterative process - automate and improve automation)
