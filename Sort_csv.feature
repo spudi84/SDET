@@ -12,10 +12,10 @@ Sort the values in a file containing comma-seperated single line of strings
 	Then the program should return a file output.csv with comma-seperated strings sorted in descending order
 	
 	Scenario: Input file with null values or spaces
-	Given the input file has one more null values or spaces
+	Given the input file contains one or more null values or spaces
 	When the input file is read
 	Then the program should return a file output.csv with comma-seperated strings sorted in descending order
-	And treat the null values or spaces as final elements in the line
+	And treat the null values or spaces as final elements in the order
 	
 	Scenario: Input file with unicode data
 	Given the input file contains unicode data
